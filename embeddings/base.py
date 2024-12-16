@@ -321,7 +321,7 @@ class UformEmbeddings(BaseEmbeddings):
 
 
 @dataclass
-class OptimumEmbedding(BaseEmbeddings):
+class OptimumEmbeddings(BaseEmbeddings):
     model_name: str = DEFAULT_PADDLE_MODEL_NAME
     cache_folder: t.Optional[str] = None
     model_kwargs: t.Dict[str, t.Any] = field(default_factory=dict)
